@@ -9,12 +9,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f9f5f0;
+            color: #333;
         }
 
         header {
-            background-color: #008080;
-            color: white;
+            background-color: #f7efe5;
+            color: #5a4636;
             padding: 20px;
             text-align: center;
         }
@@ -22,14 +23,15 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #006666;
+            background-color: #f7efe5;
             padding: 10px;
         }
 
         nav a {
-            color: white;
+            color: #5a4636;
             text-decoration: none;
             margin: 0 15px;
+            font-weight: bold;
         }
 
         nav a:hover {
@@ -40,7 +42,7 @@
             background-image: url('https://via.placeholder.com/1500x500');
             background-size: cover;
             background-position: center;
-            color: white;
+            color: #333;
             text-align: center;
             padding: 100px 20px;
         }
@@ -64,10 +66,18 @@
         .feature {
             flex: 1;
             min-width: 300px;
-            background-color: white;
+            background-color: #ffffff;
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature img {
+            width: 24px;
+            height: 24px;
         }
 
         .gallery {
@@ -86,8 +96,8 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #008080;
-            color: white;
+            background-color: #f7efe5;
+            color: #5a4636;
             margin-top: 20px;
         }
     </style>
@@ -118,16 +128,44 @@
         <h2>Caractéristiques</h2>
         <div class="features">
             <div class="feature">
-                <h3>Grande Piscine</h3>
-                <p>Profitez d'une grande piscine privée pour vous détendre et vous amuser.</p>
+                <img src="icons/house.svg" alt="Icône maison">
+                <span>Tout l'hébergement est pour vous</span>
             </div>
             <div class="feature">
-                <h3>Chambres Confortables</h3>
-                <p>Des chambres spacieuses et climatisées pour un sommeil réparateur.</p>
+                <img src="icons/area.svg" alt="Icône superficie">
+                <span>120 m² superficie</span>
             </div>
             <div class="feature">
-                <h3>Vue Magnifique</h3>
-                <p>Admirez la beauté naturelle de la région d'Agadir depuis la terrasse.</p>
+                <img src="icons/kitchen.svg" alt="Icône cuisine">
+                <span>Cuisine</span>
+            </div>
+            <div class="feature">
+                <img src="icons/lake-view.svg" alt="Icône vue sur le lac">
+                <span>Vue sur le lac</span>
+            </div>
+            <div class="feature">
+                <img src="icons/garden.svg" alt="Icône jardin">
+                <span>Jardin</span>
+            </div>
+            <div class="feature">
+                <img src="icons/pool.svg" alt="Icône piscine">
+                <span>Piscine</span>
+            </div>
+            <div class="feature">
+                <img src="icons/washing-machine.svg" alt="Icône lave-linge">
+                <span>Lave-linge</span>
+            </div>
+            <div class="feature">
+                <img src="icons/wifi.svg" alt="Icône Wi-Fi">
+                <span>Connexion Wi-Fi gratuite</span>
+            </div>
+            <div class="feature">
+                <img src="icons/terrace.svg" alt="Icône terrasse">
+                <span>Terrasse</span>
+            </div>
+            <div class="feature">
+                <img src="icons/parking.svg" alt="Icône parking">
+                <span>Parking gratuit</span>
             </div>
         </div>
     </section>
