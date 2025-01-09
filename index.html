@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villa Hanae - Location Vacances</title>
     <style>
+        /* Couleurs inspirées de ttt.txt */
+        :root {
+            --primary-color: #B89364;
+            --secondary-color: #7C684D;
+            --background-color: #FFFCF4;
+            --text-color: #333;
+            --accent-color: #61CE70;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f5f0;
-            color: #333;
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
 
         header {
-            background-color: #f7efe5;
-            color: #5a4636;
+            background-color: var(--primary-color);
+            color: #FFF;
             padding: 20px;
             text-align: center;
         }
@@ -23,15 +32,16 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #f7efe5;
+            background-color: var(--secondary-color);
             padding: 10px;
         }
 
         nav a {
-            color: #5a4636;
+            color: #FFF;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            font-family: 'Roboto Slab', serif;
         }
 
         nav a:hover {
@@ -42,24 +52,29 @@
             background-image: url('images/hero.jpg'); /* Remplacez par une image de vacances appropriée */
             background-size: cover;
             background-position: center;
-            color: #333;
+            color: #FFF;
             text-align: center;
             padding: 100px 20px;
         }
 
         .hero h1 {
             font-size: 3em;
-            color: #5a4636;
+            color: var(--primary-color);
+            font-family: 'Playfair Display', serif;
         }
 
         .hero p {
-            color: #5a4636;
+            color: #FFF;
+            font-family: 'Raleway', sans-serif;
         }
 
         section {
             padding: 20px;
             max-width: 1200px;
             margin: auto;
+            background-color: #FFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .features {
@@ -71,7 +86,7 @@
         .feature {
             flex: 1;
             min-width: 300px;
-            background-color: #ffffff;
+            background-color: #FFF;
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -93,14 +108,15 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #f7efe5;
-            color: #5a4636;
+            background-color: var(--secondary-color);
+            color: #FFF;
             margin-top: 20px;
         }
 
         .reviews {
             padding: 20px;
-            background-color: #ffffff;
+            background-color: var(--accent-color);
+            color: #FFF;
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
@@ -108,7 +124,7 @@
 
         .reviews h2 {
             text-align: center;
-            color: #5a4636;
+            font-family: 'Playfair Display', serif;
         }
 
         .reviews form {
@@ -128,7 +144,7 @@
         }
 
         .reviews input[type="submit"] {
-            background-color: #5a4636;
+            background-color: var(--secondary-color);
             color: white;
             padding: 10px;
             border: none;
@@ -137,7 +153,7 @@
         }
 
         .reviews input[type="submit"]:hover {
-            background-color: #4b3d30;
+            background-color: var(--primary-color);
         }
     </style>
 </head>
@@ -159,7 +175,7 @@
     <section id="description">
         <h2>Description</h2>
         <p>Située à Issen, proche à la fois d'Agadir et Taroudant, la Villa Hanae Dyar Shemsy propose un hébergement climatisé avec une piscine privée, une vue sur le jardin et une terrasse. Il se trouve à 41 km du Royal Golf Agadir et dispose d'une réception ouverte 24h/24. Vous bénéficierez gratuitement d'une connexion Wi-Fi et d'un parking privé.</p>
-        <p>La villa comprend 2 chambres, 2 salles de bains, du linge de lit, des serviettes, une télévision à écran plat avec des services de streaming, un coin repas, une cuisine entièrement équipée et une terrasse avec vue sur le lac. Vous pourrez prendre vos repas dans le coin repas extérieur tout en admirant la vue sur la rue calme. Pour plus d'intimité, l'hébergement dispose d'une entrée privée et est protégé par une équipe de sécurité 24h/24 .</p>
+        <p>La villa comprend 2 chambres, 2 salles de bains, du linge de lit, des serviettes, une télévision à écran plat avec des services de streaming, un coin repas, une cuisine entièrement équipée et une terrasse avec vue sur le lac. Vous pourrez prendre vos repas dans le coin repas extérieur tout en admirant la vue sur la rue calme. Pour plus d'intimité, l'hébergement dispose d'une entrée privée et est protégé par une équipe de sécurité 24h/24.</p>
         <p>Des équipements de jeux en plein air sont également disponibles dans les parties communes de la résidence.</p>
         <p>Vous séjournerez à 44 km de la médina Polizzi et à 46 km du parcours de golf Ocean. L'aéroport d'Agadir-Al Massira est à 33 km.</p>
     </section>
