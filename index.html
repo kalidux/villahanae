@@ -97,6 +97,48 @@
             color: #5a4636;
             margin-top: 20px;
         }
+
+        .reviews {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .reviews h2 {
+            text-align: center;
+            color: #5a4636;
+        }
+
+        .reviews form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .reviews textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        .reviews input[type="submit"] {
+            background-color: #5a4636;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reviews input[type="submit"]:hover {
+            background-color: #4b3d30;
+        }
     </style>
 </head>
 <body>
@@ -139,9 +181,9 @@
     <section id="gallery">
         <h2>Galerie</h2>
         <div class="gallery">
-            <img src="images/606714876.jpg" alt="Salon moderne de la villa">
-            <img src="images/606714922.jpg" alt="Piscine privée de la villa">
             <img src="images/606714927.jpg" alt="Terrasse spacieuse">
+            <img src="images/606714922.jpg" alt="Piscine privée de la villa">
+            <img src="images/606714876.jpg" alt="Salon moderne de la villa">
             <img src="images/606714932.jpg" alt="Vue extérieure de la villa">
             <img src="images/606714937.jpg" alt="Chambre confortable">
             <img src="images/606714941.jpg" alt="Cuisine équipée">
@@ -158,6 +200,13 @@
         <p>Pour plus d'informations ou pour réserver votre séjour :</p>
         <p>Instagram : <a href="https://www.instagram.com/villa_hanae/" target="_blank">@villa_hanae</a></p>
         <p>Whatsapp : <a href="https://wa.me/33610058889" target="_blank">+33 6 10 05 88 89</a></p>
+    </section>
+    <section id="reviews" class="reviews">
+        <h2>Laissez un avis</h2>
+        <form action="#" method="post">
+            <textarea name="review" rows="5" placeholder="Écrivez votre avis ici..."></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
     </section>
     <footer>
         <p>&copy; 2025 Villa Hanae. Tous droits réservés.</p>
